@@ -6,7 +6,7 @@ describe("Quales Course Management Test Suite", () => {
   it("Validate that a user can sign in successfully to the Quales management app", () => {
     //Here is where our cypress scripts shall be written
 
-    // visiting the quales app url
+    //Visit the quales web app url
     cy.visit("http://tawdry-rule.surge.sh");
     //Spy on the sign button
     cy.get(".css-48p1y4 > .MuiButton-root")
