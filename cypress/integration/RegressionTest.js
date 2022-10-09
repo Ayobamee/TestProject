@@ -10,26 +10,25 @@ describe("Quales Course Management Test Suite", () => {
     cy.visit("http://tawdry-rule.surge.sh");
     //Spy on the sign button
     cy.get(".css-48p1y4 > .MuiButton-root")
-    //click sign in
-    .click();
+      //click sign in
+      .click();
 
     //Spy on the email input field
-    cy.get('[data-testid=EmailAddress]')
-    //type in the email field
-    .type("ay@mail.com")
+    cy.get("[data-testid=EmailAddress]")
+      //type in the email field
+      .type("ay@mail.com");
 
     //Spy on the password input field
-    cy.get('[data-testid=Password]')
-    //type in the password field
-    .type("pass1234")
+    cy.get("[data-testid=Password]")
+      //type in the password field
+      .type("pass1234");
 
     //Spy Login button
-    cy.get('.MuiButton-contained')
-    .click()
+    cy.get(".MuiButton-contained").click();
 
     //Write an assertion that the name Ayobami appears
     //Spy on the name Ayobami
-    cy.contains('Ayobami')
-    .should("be.visible")
+    cy.contains("Ayobami").should("be.visible");
+    cy.log("The test is completed");
   });
 });
